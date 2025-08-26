@@ -1,0 +1,45 @@
+{
+    "name": "microbit-voice-recognition",
+    "description": "A micro:bit extension for voice recognition using Edge Impulse",
+    "version": "1.0.0",
+    "license": "MIT",
+    "author": "micro:bit Voice Recognition Team",
+    "files": [
+        "main.ts",
+        "voice-recognition.ts",
+        "edge-impulse-wrapper.ts",
+        "edge-impulse-standalone.js",
+        "edge-impulse-standalone.wasm",
+        "run-impulse.js",
+        "README.md",
+        "test.ts",
+        "example.ts",
+        "CHANGELOG.md",
+        "LICENSE"
+    ],
+    "dependencies": {
+        "core": "*",
+        "microphone": "*"
+    },
+    "public": false,
+    "icon": "./icon.png",
+    "card": {
+        "name": "Voice Recognition",
+        "description": "Add voice recognition capabilities to your micro:bit",
+        "imageUrl": "./icon.png"
+    },
+    "supportedTargets": [
+        "microbit"
+    ],
+    "preferredEditor": "blocksprj",
+    "yotta": {
+        "config": {
+            "microbit-dal": {
+                "bluetooth": {
+                    "enabled": 0
+                }
+            }
+        }
+    },
+    "installedVersion": "1.0.0"
+}

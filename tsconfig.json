@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "ES5",
+    "lib": ["ES5", "DOM"],
+    "module": "none",
+    "moduleResolution": "node",
+    "noEmit": true,
+    "strict": false,
+    "noImplicitAny": false,
+    "noImplicitReturns": false,
+    "noImplicitThis": false,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
+  },
+  "include": [
+    "*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "built",
+    "dist"
+  ]
+}

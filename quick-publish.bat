@@ -5,6 +5,22 @@ echo Quick Publish to GitHub Script
 echo ========================================
 echo.
 
+echo 可选操作: 更新Edge Impulse模型
+echo ----------------------------------------
+set /p update_model="是否要更新Edge Impulse模型? (y/n): "
+if /i "%update_model%"=="y" (
+    echo.
+    echo 请提供新模型文件的完整路径:
+    set /p model_path="模型文件路径: "
+    if exist "update-model.bat" (
+        call update-model.bat "%model_path%"
+    ) else (
+        echo 错误: update-model.bat 文件不存在
+        echo 请确保模型更新工具已创建
+    )
+    echo.
+)
+
 echo Step 1: Checking Git status...
 git status
 echo.

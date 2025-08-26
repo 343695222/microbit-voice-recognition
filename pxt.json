@@ -19,9 +19,11 @@
     ],
     "dependencies": {
         "core": "*",
-        "microphone": "*"
+        "microphone": "*",
+        "pxt-core": "*",
+        "pxt-microbit": "*"
     },
-    "public": false,
+    "public": true,
     "icon": "./icon.png",
     "card": {
         "name": "Voice Recognition",
@@ -32,14 +34,5 @@
         "microbit"
     ],
     "preferredEditor": "blocksprj",
-    "yotta": {
-        "config": {
-            "microbit-dal": {
-                "bluetooth": {
-                    "enabled": 0
-                }
-            }
-        }
-    },
-    "installedVersion": "1.0.0"
+
 }

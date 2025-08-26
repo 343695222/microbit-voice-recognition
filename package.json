@@ -18,13 +18,13 @@
   "author": "micro:bit Voice Recognition Team",
   "license": "MIT",
   "devDependencies": {
-    "typescript": "^4.9.5",
     "@types/node": "^18.15.0",
-    "tslint": "^6.1.3"
+    "tslint": "^6.1.3",
+    "typescript": "^4.9.5"
   },
   "dependencies": {
-    "pxt-core": "*",
-    "pxt-microbit": "*"
+    "pxt-core": "^12.0.16",
+    "pxt-microbit": "^8.0.16"
   },
   "repository": {
     "type": "git",

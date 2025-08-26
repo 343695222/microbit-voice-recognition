@@ -1,9 +1,14 @@
 {
     "name": "microbit-voice-recognition",
-    "description": "A micro:bit extension for voice recognition using Edge Impulse",
     "version": "1.0.0",
+    "description": "A micro:bit extension for voice recognition using Edge Impulse",
     "license": "MIT",
-    "author": "micro:bit Voice Recognition Team",
+    "dependencies": {
+        "core": "*",
+        "microphone": "*",
+        "pxt-core": "*",
+        "pxt-microbit": "*"
+    },
     "files": [
         "main.ts",
         "voice-recognition.ts",
@@ -17,22 +22,16 @@
         "CHANGELOG.md",
         "LICENSE"
     ],
-    "dependencies": {
-        "core": "*",
-        "microphone": "*",
-        "pxt-core": "*",
-        "pxt-microbit": "*"
-    },
     "public": true,
+    "supportedTargets": [
+        "microbit"
+    ],
+    "preferredEditor": "blocksprj",
+    "author": "micro:bit Voice Recognition Team",
     "icon": "./icon.png",
     "card": {
         "name": "Voice Recognition",
         "description": "Add voice recognition capabilities to your micro:bit",
         "imageUrl": "./icon.png"
-    },
-    "supportedTargets": [
-        "microbit"
-    ],
-    "preferredEditor": "blocksprj",
-
+    }
 }
